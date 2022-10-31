@@ -3,11 +3,12 @@
 @include mixins.fonts;
 
 .navbar {
-    padding: 20px;
+    padding: 10px 20px 0 20px;
 }
 
 .links {
     @include mixins.hflex;
+    padding-left: 20px;
 }
 
 .link {
@@ -20,4 +21,10 @@
     &:hover {
         border-color: black;
     }
+}
+
+.title {
+    font-family: OpenSans;
+    font-size: 30px;
+    font-weight: 600;
 }

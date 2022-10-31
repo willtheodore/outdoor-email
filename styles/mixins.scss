@@ -1,11 +1,17 @@
 @mixin hflex {
     display: flex;
-    flex-direction: horizontal;
+    flex-direction: row;
 }
 
 @mixin vflex {
     display: flex;
-    flex-direction: vertical;
+    flex-direction: column;
+}
+
+@mixin pointer {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @mixin fonts {
@@ -16,5 +22,9 @@
     @font-face {
         font-family: OpenSans-Italic;
         src: url("../fonts/OpenSans-Italic.ttf");
+    }
+    @font-face {
+        font-family: Inconsolata;
+        src: url("../fonts/Inconsolata.ttf");
     }
 }

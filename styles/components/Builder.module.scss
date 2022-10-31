@@ -1,0 +1,62 @@
+@use "../mixins.scss";
+
+.container {
+    @include mixins.hflex;
+    align-items: stretch;
+    height: 80vh;
+    width: 100vw;
+    padding: 0 20px;
+}
+
+.editor {
+    height: 100%;
+    width: 100%;
+
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.form {
+    textarea {
+        height: 75vh;
+        width: 100%;
+        padding: 7px;
+        border: 3px solid lightslategray;
+        border-radius: 4px;
+
+        font-family: Inconsolata;
+        font-size: 14px;
+        text-align: start;
+        vertical-align: top;
+        resize: none;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    button {
+        background-color: lightslategray;
+        padding: 2px 7px;
+        color: white;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 12px;
+
+        @include mixins.pointer;
+    }
+}
+
+.divider {
+    height: 100%;
+    margin: 0 10px;
+    border: 2px solid black;
+}
+
+.preview {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
