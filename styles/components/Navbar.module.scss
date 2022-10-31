@@ -1,0 +1,23 @@
+@use "../mixins.scss";
+
+@include mixins.fonts;
+
+.navbar {
+    padding: 20px;
+}
+
+.links {
+    @include mixins.hflex;
+}
+
+.link {
+    margin-right: 10px;
+    font-family: OpenSans;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2px 7px;
+
+    &:hover {
+        border-color: black;
+    }
+}
