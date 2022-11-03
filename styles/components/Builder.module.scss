@@ -1,8 +1,8 @@
 @use "../mixins.scss";
 
 .container {
-    @include mixins.hflex;
-    align-items: stretch;
+    display: grid;
+    grid-template: 1fr / 1fr auto 1fr;
     height: 80vh;
     width: 100vw;
     padding: 0 20px;
@@ -59,4 +59,10 @@
     height: 100%;
     width: 100%;
     overflow: scroll;
+    border: none;
+}
+
+.mainTable {
+    width: 100%;
+    height: 100%;
 }
